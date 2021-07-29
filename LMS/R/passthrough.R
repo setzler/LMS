@@ -292,37 +292,6 @@ lms.block_sample <- function(long_data, unit_var, seed=1){
 }
 
 
-#' @export
-lms.passthrough_bootstrap <- function(long_data, id_var, time_var, firm_defn, market_defn,
-                                      spell_length, firm_stayer, market_stayer,
-                                      workers_per_firm = NA, firms_per_market = NA, workers_per_market = NA,
-                                      covmat_numcores = 1, boot_numcores = 1, num_boots, block_defn) {
-  get_boot <- function(ii) {
-    flog.info("This is boot %s", ii)
-    # create block boostrap sample
-    boot <- block_sample(data = copy(long_data), id = block_defn, time = time_var)
-    boot[, (paste0(block_defn, "_temp")) := as.integer(.GRP), list(get(block_defn))]
-    boot[, (block_defn) := NULL]
-    setnames(boot, paste0(block_defn, "_temp"), block_defn)
-    # get covariance matrix
-    covmat <- lms.passthrough(
-      long_data = boot, id_var = id_var, time_var = time_var,
-      firm_defn = firm_defn, market_defn = market_defn,
-      spell_length = spell_length, firm_stayer = firm_stayer, market_stayer = market_stayer,
-      workers_per_firm = workers_per_firm, firms_per_market = firms_per_market, workers_per_market = workers_per_market,
-      sample_counts = F, sample_info_only = F, covmat_numcores = covmat_numcores, outcomes = c("wages", "va")
-    )$covmat
-    covmat[, boot := ii]
-    return(covmat)
-  }
-
-  res <- rbindlist(mclapply(1:num_boots, get_boot, mc.cores = boot_numcores), use.names = T)
-  return(res)
-}
-
-
-
-
 
 #' Infer event times from long covariance matrix
 #' @param covmat Covariance matrix produced by lms.passthrough.
