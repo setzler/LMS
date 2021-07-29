@@ -1,0 +1,30 @@
+% created using textables on Thu Jul 29 12:56:11 PM 2021
+\begin{tabular}{llccll}
+\toprule 
+\midrule 
+Name &   & Unique Parameters & Mean Estimate & \multicolumn{2}{c}{Moments of the Data} \\
+ \cmidrule(lr){1-4} \cmidrule(lr){5-6} 
+\textbf{Panel A. Rents and Scale} \\
+Idiosyncratic Taste Parameter & $\beta$ & 1 & 4.99 & Market Passthrough & $\frac{\mathbb{E}\left[\Delta \bar{y}_{rt}\left(\bar{w}_{rt+e}-\bar{w}_{rt-e'}\right)|S_{i}{=}1\right]}{\mathbb{E}\left[\Delta \bar{y}_{rt}\left(\bar{y}_{rt+e}-\bar{y}_{rt-e'}\right)|S_{i}{=}1\right]}$ \\
+Taste Correlation Parameter & $\rho_r$ & 8 & 0.70 & Net Passthrough & $\frac{\mathbb{E}\left[\Delta \tilde{y}_{jt}\left(\tilde{w}_{it+e}-\tilde{w}_{it-e'}\right)|S_{i}{=}1,r(j)=r\right]}{\mathbb{E}\left[\Delta \tilde{y}_{jt}\left(\tilde{y}_{jt+e}-\tilde{y}_{jt-e'}\right)|S_{i}{=}1,r(j)=r\right]}$ \\
+Returns to Scale Parameter & $\alpha_r$ & 8 & 0.21 & Labor Share & $\mathbb{E}[b_{j(i,t)} - y_{j(i,t)}|r(j)=r]$ \\[5pt]
+\midrule 
+Name &   & Unique Parameters & Var. Estimate & \multicolumn{2}{c}{Moments of the Data} \\
+ \cmidrule(lr){1-4} \cmidrule(lr){5-6} 
+\multicolumn{3}{l}{\textbf{Panel B. Firm and Worker Heterogeneity}} \\
+Time-varying Firm Premium & $\psi_{jt}$ & 10,669,602 & 0.02 & Structural Wage Equation & $\mathbb{E}[w_{it}{-}\frac{1}{1+\lambda\beta}\bar{y}_{r,t}$ \\
+Firm-specific Technology Parameter & $\theta_j$ & 10 & 0.04 &   & $\qquad {-}\frac{\rho_{r}}{\rho_{r}+\lambda\beta}\tilde{y}_{j,t} | r(j)=r]$ \\
+Worker Quality & $x_i$ & 61,670,459 & 0.31 & Wage Changes around Moves & $\mathbb{E}[w_{it+1}|j \rightarrow j'] - \mathbb{E}[w_{it}|j' \rightarrow j]$ \\
+Amenity Efficiency Units at Neutral TFP & $h_j$ & 1,953,915 & 0.14 &   & $\mathbb{E}[w_{it}|j' \rightarrow j] - \mathbb{E}[w_{it+1}|j \rightarrow j']$ \\[10pt]
+Time-varying Firm-specific TFP & $\tilde{a}_{jt}$ & 10,669,602 & 0.14 & Total Labor Input \& & $\ell_{jt}=\log \sum X_i^{\theta_j}$ and $\psi_{jt}$ \\
+Time-varying Market-specific TFP & $\overline{a}_{rt}$ & 111,829 & 0.12 & Time-varying Firm Premium &  \\[5pt]
+\midrule 
+Name &   & Unique Parameters & Var. Estimate & \multicolumn{2}{c}{Moments of the Data} \\
+ \cmidrule(lr){1-4} \cmidrule(lr){5-6} 
+\textbf{Panel C. Model Counterfactuals} \\
+Preferences for amenities for: & $g_{j}(X)$ & 6,974,519 & 0.20 & Firm Size \& & $\Pr[j]$ \\
+Firm $j$ for workers of quality $X$ &   &  &  & Firm Composition \& & $\Pr[x | k(j)=k]$ \\
+Market $r$ for workers of quality $X$ &   &   &   & Market Composition & $\Pr[x | r(j)=r]$ \\
+\midrule 
+\bottomrule 
+\end{tabular}

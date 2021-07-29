@@ -1,0 +1,25 @@
+% created using textables on Thu Jul 29 12:56:10 PM 2021
+\begin{tabular}{llrrrr}
+\toprule 
+\midrule 
+\multicolumn{2}{c}{} & \multicolumn{4}{c}{\textbf{Model Specifications}} \\
+ \cmidrule(lr){3-6} 
+\multicolumn{2}{c}{} & \textbf{Main} & \multicolumn{3}{c}{\textbf{Alternatives}} \\
+ \cmidrule(lr){3-3} \cmidrule(lr){4-6} 
+ &  &  & $\theta_j=\bar{\theta}$ & $\gamma_r=\Upsilon=0$ & $\theta_j=\bar{\theta}$ and \\
+ &  &  &   &   & $\gamma_r=\Upsilon=0$ \\
+\midrule 
+Share explained by: \\
+$\quad$ i) Worker Quality & $Var(\tilde{x}_i)$ & 71.6\% & 73.5\% & 70.4\% & 72.4\% \\
+$\quad$ ii) Firm Effects & $Var(\tilde{\psi}_{j(i)})$ & 4.3\% & 3.0\% & 4.3\% & 3.2\% \\
+$\quad$ iii) Sorting & $2Cov(\tilde{x}_i,\tilde{\psi}_{j(i)})$ & 13.0\% & 12.8\% & 13.1\% & 12.9\% \\
+$\quad$ iv) Interactions & $Var(\varrho_{ij})   + 2Cov(x_i + \psi_{j(i)}, \varrho_{ij})$ & 0.9\% &   & 1.2\% &   \\
+$\quad$ v) Time-varying Effects & $Var(\psi^a_{j(i),t}) + 2Cov(x_i, \psi^a_{j(i),t})$ & 0.3\% & 0.3\% &   &   \\[5pt]
+Sorting Correlation: & $Cor(x_i,\psi_{j(i)})$ & 0.37 & 0.43 & 0.38 & 0.43 \\
+Variance Explained: & $R^2$ & 0.90 & 0.90 & 0.89 & 0.89 \\[5pt]
+Specification: \\
+$\quad$ Firm-Worker Interactions &  & \checkmark & \ding{55} & \checkmark & \ding{55} \\
+$\quad$ Time-varying Firm Effects &  & \checkmark & \checkmark & \ding{55} & \ding{55} \\
+\midrule 
+\bottomrule 
+\end{tabular}
