@@ -1,6 +1,6 @@
 # README 
 
-Overview  of programs/code
+Overview  of Programs
 ---------------------------
 
 The code in this replication package utilizes R and Matlab to produce all tables and figures presented in the manuscript and online appendix. There are four steps in the production of the tables and figures:
@@ -68,7 +68,7 @@ In order to execute step 2, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on CodeOcean which demonstrates all of step 2 using simulated data that has the same data structure as the confidential micro-data. The capsule is available at https://codeocean.com/capsule/7147919/tree. This capsule also makes clear the software required to execute `main.R`. Make sure to set `runtype = "CodeOcean-simulation"` in `main.R` and copy the contents of `2_estimation/` into the `code/` subdirectory of the CodeOcean capsule. CodeOcean run time is approximately 25 minutes.
+We have prepared a replication capsule on CodeOcean which demonstrates all of step 2 using simulated data that has the same data structure as the confidential micro-data. The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/7147919/tree). This capsule also makes clear the software required to execute `main.R`. Make sure to set `runtype = "CodeOcean-simulation"` in `main.R` and copy the contents of `2_estimation/` into the `code/` subdirectory of the CodeOcean capsule. CodeOcean run time is approximately 25 minutes.
 
 
 
@@ -97,7 +97,7 @@ In order to execute step 3, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on CodeOcean which demonstrates all of step 3 using simulated data that has the same data structure as the non-public input data. The capsule is available at https://codeocean.com/capsule/3047157/tree. For the 6 `.dat` files, it uses the results produced by the CodeOcean capsule described under step 2, which were based on simulated data. The `postInstall` file available in the CodeOcean capsule demonstrates how to automatically prepare the software. Run time is approximately 2 minutes.
+We have prepared a replication capsule on CodeOcean which demonstrates all of step 3 using simulated data that has the same data structure as the non-public input data. The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3047157/tree). For the 6 `.dat` files, it uses the results produced by the CodeOcean capsule described under step 2, which were based on simulated data. The `postInstall` file available in the CodeOcean capsule demonstrates how to automatically prepare the software. Run time is approximately 2 minutes.
 
 
 
@@ -136,9 +136,9 @@ In order to execute step 4, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on CodeOcean which demonstrates all of step 4 using the statistical extracts from the *real IRS data*. The capsule is available at  https://codeocean.com/capsule/4775581/tree. The capsule reproduces all tables and figures in the paper and its online appendix. Run time is approximately 3 minutes.
+We have prepared a replication capsule on CodeOcean which demonstrates all of step 4 using the statistical extracts from the *real IRS data*. The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/4775581/tree). The capsule reproduces all tables and figures in the paper and its online appendix. Run time is approximately 3 minutes.
 
-We have also prepared a replication capsule on CodeOcean which demonstrates all of step 4 using the statistical extracts from the *simulated data*.  The capsule is available at  https://codeocean.com/capsule/3648033/tree. Run time is approximately 3 minutes.
+We have also prepared a replication capsule on CodeOcean which demonstrates all of step 4 using the statistical extracts from the *simulated data*.  The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3648033/tree). Run time is approximately 3 minutes.
 
 
 List of Output and Associated Programs
