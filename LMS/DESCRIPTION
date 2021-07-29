@@ -1,0 +1,27 @@
+Package: LMS
+Title: Replication package for Lamadon, Mogstad, and Setzler.
+Version: 1.0
+Authors@R: 
+    person(given = "Bradley",
+           family = "Setzler",
+           role = c("aut", "cre"),
+           email = "bradley.setzler@gmail.com")
+Description: Replication package for Lamadon, Mogstad, and Setzler.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: Rcpp
+LinkingTo: Rcpp
+Depends: 
+    data.table,
+    futile.logger,
+    checkmate,
+    magrittr,
+    parallel,
+    rblm,
+    coop,
+    modi,
+    lfe,
+    eventStudy
