@@ -52,9 +52,9 @@ All estimation in this step is performed using R on the SOI server; R and its pa
 *Packages available from GitHub:*
 - `setzler/eventStudy/eventStudy`
 - `tlamadon/rblm`
+- `setzler/LMS/LMS`
 
 *Packages provided in compressed form within subdirectory `2_estimation/` of this replication package:*
-- `LMS`
 - `ShiftShareIV`
 
 ### Instructions to Replicators
