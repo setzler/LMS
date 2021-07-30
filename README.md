@@ -192,7 +192,7 @@ All tables and figures in the main text and online appendix of the manuscript ar
 | Figure A3 | figure.A3ab() | passthrough_results.R | figureA3a.pdf, figureA3b.pdf | params/LMS_params_naics2_cz_broadmarket.csv | Step 2 |
 | Figure A4 | figure.A4abcd_A5() | model_results.R | figureA4a.pdf, figureA4b.pdf, figureA4c.pdf, figureA4d.pdf | model/LMS_fitgrid_naics2_cz_broadmarket.csv | Step 2 |
 | Figure A5 | figure.A4abcd_A5() | model_results.R | figureA5.pdf | model/LMS_fitgrid_naics2_cz_broadmarket.csv | Step 2 |
-| Figure A6 | figure.A6() | model_results.R | figureA5.pdf | model/LMS_compdiffs_naics2_cz_broadmarket.csv | Step 2 |
+| Figure A6 | figure.A6() | model_results.R | figureA6.pdf | model/LMS_compdiffs_naics2_cz_broadmarket.csv | Step 2 |
 | Figure A7 | figure.A7ab() | model_results.R | figureA7a.pdf, figureA7b.pdf | model/LMS_shrinks_naics2_cz_broadmarket.csv | Step 2 |
 
 
