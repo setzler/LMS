@@ -162,7 +162,7 @@ List of Output and Associated Programs
 All tables and figures in the main text and online appendix of the manuscript are produced by step 4 (see details above). The list of tables and figures and their associated programs is as follows:
 
 
-Main Text:*
+*Main Text:*
 
 | Figure/Table #    | Function Call           | Function Source | Output File(s) | Input File(s) | Input(s) Produced by |
 |-------------------|--------------------------|-------------|----------------------------------|------------------| --------|
@@ -184,12 +184,12 @@ Main Text:*
 | Table A2 | table.A1_A2() | descriptives_results.R | tableA2.pdf | descriptives/LMS_descriptives_naics2_cz.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket.csv, descriptives/LMS_descriptives_naics2_cz_movers.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket_movers.csv, descriptives/LMS_descriptives_naics2_cz_stayersteps.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket_stayersteps.csv | Step 2 |
 | Table A3 | table.A3() | passthrough_results.R | tableA3.pdf | matlab/overall_passthrough_matlab_results.mat, matlab/bootstrap_passthrough_matlab_results.mat, matlab/bootstrap_passthrough_matlab_results_MA2.mat | Step 3 |
 | Table A4 | table.2_A4() | passthrough_results.R | tableA4.pdf | params/LMS_params_naics2_cz_broadmarket.csv, params/LMS_params_naics2_cz_broadmarket_bootstraps.csv, params/LMS_shiftshare_naics2_cz_broadmarket.csv, params/results_forLMS_LSelasticity.csv | Step 2 |
-| Table A5 | table.A5() | passthrough_results.R | tableA5.pdf |
+| Table A5 | table.A5() | passthrough_results.R | tableA5.pdf | params/LMS_params_naics2_cz.csv, params/LMS_params_naics2_cz_broadmarket.csv, params/LMS_params_naics2_county_broadmarket.csv, params/LMS_params_naics2_state_broadmarket.csv, params/LMS_params_naics3_cz_broadmarket.csv, params/LMS_params_supersector_cz_broadmarket.csv | Step 2 |
 | Table A6 | table.A6() | FE_results.R | tableA6.pdf | FE/blm_unadjusted_naics2_cz_broadmarket.rds, FE/blm_adjusted_naics2_cz_broadmarket.rds | Step 2 |
 | Table A7 | table.A7() | passthrough_results.R | tableA7.pdf | params/LMS_params_naics2_cz_broadmarket.csv, params/LMS_params_naics2_cz_broadmarket_bootstraps.csv | Step 2 |
 | Figure A1 | figure.A1ab() | passthrough_results.R | figureA1a.pdf, figureA1b.pdf | params/LMS_params_naics2_cz_broadmarket.csv, params/LMS_params_naics2_cz_subsamples.csv | Step 2 |
-| Figure A2 | figure.A2() | descriptives_results.R | figureA2.pdf | descriptives/LMS_taxfit.csv | Step 2
-| Figure A3 | figure.A3ab() | passthrough_results.R | figureA3a.pdf, figureA3b.pdf |
+| Figure A2 | figure.A2() | descriptives_results.R | figureA2.pdf | descriptives/LMS_taxfit.csv | Step 2 |
+| Figure A3 | figure.A3ab() | passthrough_results.R | figureA3a.pdf, figureA3b.pdf | params/LMS_params_naics2_cz_broadmarket.csv | Step 2 |
 | Figure A4 | figure.A4abcd_A5() | model_results.R | figureA4a.pdf, figureA4b.pdf, figureA4c.pdf, figureA4d.pdf | model/LMS_fitgrid_naics2_cz_broadmarket.csv | Step 2 |
 | Figure A5 | figure.A4abcd_A5() | model_results.R | figureA5.pdf | model/LMS_fitgrid_naics2_cz_broadmarket.csv | Step 2 |
 | Figure A6 | figure.A6() | model_results.R | figureA5.pdf | model/LMS_compdiffs_naics2_cz_broadmarket.csv | Step 2 |
