@@ -183,7 +183,7 @@ This output can be viewed in the `results/` subdirectory of our CodeOcean replic
 
 
 
-Licenses
------------------------------------------------------------------
+License
+--------------
 
-The code is licensed under a MIT license. See [license](https://github.com/setzler/LMS/blob/main/LICENSE) for details.
+The code and data sets are licensed under a MIT license. See [license](https://github.com/setzler/LMS/blob/main/LICENSE) for details.
