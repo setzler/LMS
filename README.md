@@ -171,7 +171,7 @@ Main Text:*
 | Table 3 | table.3() | passthrough_results.R | table3.pdf | params/LMS_params_naics2_cz_broadmarket.csv, params/LMS_params_naics2_cz_broadmarket_bootstraps.csv | Step 2 |
 | Table 4 | table.4() | model_results.R | table4.pdf | model/LMS_psidecomp_naics2_cz_broadmarket.csv, model/LMS_psidecomp_AKM_naics2_cz_broadmarket.csv | Step 2 |
 | Table 5 | table.5() | model_results.R | table5.pdf | model/LMS_welfare_naics2_cz_broadmarket.csv | Step 2 |
-| Figure 1 | figure.1() | passthrough_results.R | figure1.pdf |
+| Figure 1 | figure.1() | passthrough_results.R | figure1.pdf | LMS_DiD_naics2_cz.csv | Step 2 |
 | Figure 2 | figure.2() | FE_results.R | figure2.pdf | FE/blm_adjusted_naics2_cz_broadmarket.rds | Step 2 |
 | Figure 3 | figure.3abcd() | model_results.R | figure3a.pdf, figure3b.pdf, figure3c.pdf, figure3d.pdf | FE/blm_adjusted_naics2_cz_broadmarket.rds, model/LMS_shrinksort_naics2_cz_broadmarket.csv | Step 2 |
 
@@ -182,7 +182,7 @@ Main Text:*
 |-------------------|--------------------------|-------------|----------------------------------|------------------| --------|
 | Table A1 | table.A1_A2() | descriptives_results.R | tableA1.pdf | descriptives/LMS_descriptives_naics2_cz.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket.csv, descriptives/LMS_descriptives_naics2_cz_movers.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket_movers.csv, descriptives/LMS_descriptives_naics2_cz_stayersteps.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket_stayersteps.csv | Step 2 |
 | Table A2 | table.A1_A2() | descriptives_results.R | tableA2.pdf | descriptives/LMS_descriptives_naics2_cz.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket.csv, descriptives/LMS_descriptives_naics2_cz_movers.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket_movers.csv, descriptives/LMS_descriptives_naics2_cz_stayersteps.csv, descriptives/LMS_descriptives_naics2_cz_broadmarket_stayersteps.csv | Step 2 |
-| Table A3 | table.A3() | passthrough_results.R | tableA3.pdf | matlab/matlab_output.csv, matlab/matlab_output_bootstraps.csv | Step 3 |
+| Table A3 | table.A3() | passthrough_results.R | tableA3.pdf | overall_passthrough_matlab_results.mat, bootstrap_passthrough_matlab_results.mat, bootstrap_passthrough_matlab_results_MA2.mat | Step 3 |
 | Table A4 | table.2_A4() | passthrough_results.R | tableA4.pdf | params/LMS_params_naics2_cz_broadmarket.csv, params/LMS_params_naics2_cz_broadmarket_bootstraps.csv, params/LMS_shiftshare_naics2_cz_broadmarket.csv, params/results_forLMS_LSelasticity.csv | Step 2 |
 | Table A5 | table.A5() | passthrough_results.R | tableA5.pdf |
 | Table A6 | table.A6() | FE_results.R | tableA6.pdf | FE/blm_unadjusted_naics2_cz_broadmarket.rds, FE/blm_adjusted_naics2_cz_broadmarket.rds | Step 2 |
