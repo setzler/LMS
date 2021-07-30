@@ -51,18 +51,17 @@ All estimation in this step is performed using R on the SOI server; R and its pa
 
 *Packages available from GitHub:*
 - `setzler/eventStudy/eventStudy`
-- `tlamadon/rblm`
 - `setzler/LMS/LMS`
+- `setzler/ShiftShareIV`
+- `tlamadon/rblm`
 
-*Packages provided in compressed form within subdirectory `2_estimation/` of this replication package:*
-- `ShiftShareIV`
 
 ### Instructions to Replicators
 
 In order to execute step 2, complete the following tasks in order: 
 
-- copy the content from subdirectory `2_estimation/` onto the SOI server (with appropriate permission from the server administration);
-- ensure that line 7 of `main.R` is uncommented so that `runtype = "IRS-real"`, and edit the directory paths on lines 46-49 to point to your local directory on the SOI server;
+- copy the R scripts from subdirectory `2_estimation/` onto the SOI server (with appropriate permission from the server administration);
+- ensure that line 7 of `main.R` is uncommented so that `runtype = "IRS-real"`, and edit the directory paths on lines 47-50 to point to your local directory on the SOI server;
 - source `main.R`. Run time is approximately 20 hours.
 
 

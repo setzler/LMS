@@ -2,13 +2,16 @@
 rm(list=ls())
 
 # set run type
-runtype = "local-simulation"      ## run the raw data simulation on Brad's Linux machine
+# runtype = "local-simulation"      ## run the raw data simulation on Brad's Linux machine
 # runtype = "CodeOcean-simulation"    ## run the raw data simulation on a CodeOcean capsule
-# runtype = "IRS-real"              ## run the raw data real analysis on the IRS server
+runtype = "IRS-real"              ## run the raw data real analysis on the IRS server
 
 # configure
 start_time <- Sys.time()
 set.seed(112233)
+
+library(LMS)
+setDTthreads(threads = 5)
 
 # configure directories
 if(runtype=="local-simulation"){
@@ -61,8 +64,6 @@ for(subdir in c('model','descriptives','FE','params','matlab')){
   dir.create(paste0(results_dir,subdir))
 }
 
-library(LMS)
-setDTthreads(threads = 5)
 
 
 # import run commands
