@@ -28,7 +28,6 @@ if(runtype=="local-simulation"){
   auction_bootstraps <- 4
 }
 if(runtype=="CodeOcean-simulation"){
-  install.packages("ShiftShareIV_1.0.tar.gz", repos=NULL)
   data_dir <- "../data/" 
   code_dir <- "../code/" 
   intermed_dir <- "../data/" 
