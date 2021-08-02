@@ -45,6 +45,7 @@ This step performs estimation using the confidential micro-data to produce inter
 All estimation in this step is performed using R on the SOI server; R and its packages are installed by server administrators (it was most recently tested with R 4.0.1). At the time of most recent testing, all required packages were installed on the SOI server. However, if some are no longer available, request that they be installed by the server administrator. Package versions are listed based on most recent testing of the code.
 
 *Packages availabe from CRAN:*
+
 - `AER` (1.2-9)
 - `checkmate` (2.0.0)
 - `coop` (0.6-2)
@@ -58,6 +59,7 @@ All estimation in this step is performed using R on the SOI server; R and its pa
 - `ShiftShareSE` (1.0.1)
 
 *Packages available from GitHub:*
+
 - `setzler/eventStudy/eventStudy`
 - `setzler/LMS/LMS`
 - `setzler/ShiftShareIV`
@@ -125,6 +127,7 @@ Given the statistical extracts and process estimates produced by steps 2 and 3, 
 All estimation in this step is performed using R on a local machine (it was most recently tested with R 4.0.5). Package versions are listed based on most recent testing of the code.
 
 *Packages availabe from CRAN:*
+
 - `data.table` (1.14.0)
 - `futile.logger` (1.4.3)
 - `ggplot2` (3.35)
@@ -134,6 +137,7 @@ All estimation in this step is performed using R on a local machine (it was most
 - `stringr` (1.4.0)
 
 *Packages available from GitHub:*
+
 - `setzler/textables`
 
 Note: One must also have `pdflatex` available in the local environment, as it is utilized to produce the PDF versions of the tables.
@@ -153,7 +157,7 @@ In order to execute step 4, complete the following tasks in order:
 
 We have prepared a replication capsule on Code Ocean which demonstrates all of step 4 using the statistical extracts from the *real IRS data*. The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.4775581.v1). Make sure to comment line 7 and uncomment line 8 so that `runtype = "CodeOcean-real"`. The capsule reproduces all tables and figures in the paper and its online appendix. Run time is approximately 3 minutes.
 
-We have also prepared a replication capsule on Code Ocean which demonstrates all of step 4 using the statistical extracts from the *simulated data*.  The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3648033.v1). Make sure to comment line 7 and uncomment line 6 so that `untype = "CodeOcean-simulation"`. Run time is approximately 3 minutes.
+We have also prepared a replication capsule on Code Ocean which demonstrates all of step 4 using the statistical extracts from the *simulated data*.  The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3648033.v1). Make sure to comment line 7 and uncomment line 6 so that `runtype = "CodeOcean-simulation"`. Run time is approximately 3 minutes.
 
 
 List of Output and Associated Programs
