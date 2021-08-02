@@ -77,7 +77,9 @@ In order to execute step 2, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on Code Ocean which demonstrates all of step 2 using simulated data that has the same data structure as the confidential micro-data. The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.7147919.v1). This capsule also makes clear the software required to execute `main.R`. Make sure to set `runtype = "CodeOcean-simulation"` by uncommenting line 6 and commenting line 7 in `main.R` and copy the contents of `2_MicrodataEstimation/` into the `code/` subdirectory of the Code Ocean capsule. Code Ocean run time is approximately 25 minutes.
+We have prepared a replication capsule on Code Ocean which demonstrates all of step 2 using simulated data that has the same data structure as the confidential micro-data. The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.7147919.v1). This capsule also makes clear the software required to execute `main.R`. Make sure to set `runtype = "CodeOcean-simulation"` by uncommenting line 6 and commenting line 7 in `main.R` and copy the contents of `2_MicrodataEstimation/` into the `code/` subdirectory of the Code Ocean capsule. Code Ocean run time is approximately 25 minutes. 
+
+Note: The purpose of the simulated data is to illustrate code execution. The simulated data is not meant to replicate statistical characteristics of the real data, and estimates based on the simulated data should not be the same as estimates based on the real data. 
 
 
 
