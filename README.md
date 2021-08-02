@@ -165,7 +165,7 @@ We have also prepared a replication capsule on Code Ocean which demonstrates all
 List of Output and Associated Programs
 -----------------------------------------------------------------
 
-All tables and figures in the main text and online appendix of the manuscript are produced by step 4 (see details above). The list of tables and figures and their associated programs is as follows:
+All tables and figures in the main text and online appendix of the manuscript are produced by step 4 (see details above). Input files are located  in the `4_StatisticalAnalyses/data/` subdirectory of this replication pack. The list of tables and figures and their associated programs is as follows:
 
 
 *Main Text:*
@@ -206,7 +206,9 @@ This output can be viewed in the `results/` subdirectory of our Code Ocean repli
 
 
 
-License
+Licenses
 --------------
 
-The code is licensed under a MIT license. See [license](https://github.com/setzler/LMS/blob/main/LICENSE) for details.
+The code is licensed under a [MIT License.](https://github.com/setzler/LMS/blob/main/LICENSE)
+
+The data is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
