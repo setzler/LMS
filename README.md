@@ -5,10 +5,10 @@ Overview  of Programs
 
 The code in this replication package utilizes R and Matlab to produce all tables and figures presented in the manuscript and online appendix. There are four steps in the production of the tables and figures:
 
-- **Step 1: Data Preparation.** Preparation of the raw confidential micro-data in R. This step requires access to the confidential micro-data discussed below. The replication code for this step is confidential and available to qualified researchers internally from the Statistics of Income division of the IRS. 
-- **Step 2: Micro-data Estimation.** Estimation using the confidential micro-data to produce intermediate statistical extracts in R. This step requires access to the confidential micro-data produced by step 1. The replication code for this step is available in subdirectory `2_MicrodataEstimation/` of our replication package, and is executed by sourcing the `main.R` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/7147919/tree).
-- **Step 3: Permanent-Transitory Process (Table A3 only).** Using certain confidential statistical extracts produced by step 2, this step uses a polynomial optimization approach to estimate a permanent-transitory process in Matlab. The results from this step are only relevant to Online Appendix Table A3 of our manuscript, so this step may not be of primary interest to replicators. The replication code for this step is available in subdirectory `3_PTprocess/` of our replication package, and is executed by sourcing the `main.m` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3047157/tree).
-- **Step 4: Analyses of Statistical Extracts.** Given the statistical extracts and process estimates produced by steps 2 and 3, perform final analyses and produce all tables and figures. The replication code for this step is available in subdirectory `4_StatisticalAnalyses/` of our replication package, and is executed by sourcing the `main.R` script. We provide CodeOcean replication capsules for this step applied to both the real data at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/4775581/tree) and to the simulated data at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3648033/tree).
+- **Step 1: Data Preparation.** This step performs preparation of the raw confidential micro-data in R. This step requires access to the confidential micro-data discussed below. The replication code for this step is confidential and available to qualified researchers internally from the Statistics of Income division of the IRS. 
+- **Step 2: Micro-data Estimation.** This step performs estimation using the confidential micro-data to produce intermediate statistical extracts in R. This step requires access to the confidential micro-data produced by step 1. The replication code for this step is available in subdirectory `2_MicrodataEstimation/` of our replication package, and is executed by sourcing the `main.R` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.7147919.v1).
+- **Step 3: Permanent-Transitory Process (Table A3 only).** Using certain confidential statistical extracts produced by step 2, this step uses a polynomial optimization approach to estimate a permanent-transitory process in Matlab. The results from this step are only relevant to Online Appendix Table A3 of our manuscript, so this step may not be of primary interest to replicators. The replication code for this step is available in subdirectory `3_PTprocess/` of our replication package, and is executed by sourcing the `main.m` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3047157.v1).
+- **Step 4: Analyses of Statistical Extracts.** Given the statistical extracts and process estimates produced by steps 2 and 3, this step performs final analyses and produces all tables and figures in R. The replication code for this step is available in subdirectory `4_StatisticalAnalyses/code/` of our replication package, and is executed by sourcing the `main.R` script. We provide Code Ocean replication capsules for this step applied to both the real data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.4775581.v1) and to the simulated data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3648033.v1).
 
 
 
@@ -17,7 +17,7 @@ Step 1 -- Data Preparation
 
 ### Overview of this Step
 
-This step performs preparation of the raw confidential micro-data in R. It requires access to the confidential micro-data discussed here. The replication code for this step is confidential and available to qualified researchers internally from the Statistics of Income division of the IRS. 
+This step performs preparation of the raw confidential micro-data in R. This step requires access to the confidential micro-data discussed below. The replication code for this step is confidential and available to qualified researchers internally from the Statistics of Income division of the IRS. 
 
 ### Data Provinence and Availability
 
@@ -38,7 +38,7 @@ Step 2 -- Micro-data Estimation
 
 ### Overview of this Step
 
-Estimation using the confidential micro-data to produce intermediate statistical extracts in R. This step requires access to the confidential micro-data produced by step 1. The replication code for this step is available in subdirectory `2_MicrodataEstimation/` of our replication package, and is executed by sourcing the `main.R` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/7147919/tree).
+This step performs estimation using the confidential micro-data to produce intermediate statistical extracts in R. This step requires access to the confidential micro-data produced by step 1. The replication code for this step is available in subdirectory `2_MicrodataEstimation/` of our replication package, and is executed by sourcing the `main.R` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.7147919.v1).
 
 ### Software Requirements
 
@@ -75,7 +75,7 @@ In order to execute step 2, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on CodeOcean which demonstrates all of step 2 using simulated data that has the same data structure as the confidential micro-data. The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/7147919/tree). This capsule also makes clear the software required to execute `main.R`. Make sure to set `runtype = "CodeOcean-simulation"` in `main.R` and copy the contents of `2_MicrodataEstimation/` into the `code/` subdirectory of the CodeOcean capsule. CodeOcean run time is approximately 25 minutes.
+We have prepared a replication capsule on Code Ocean which demonstrates all of step 2 using simulated data that has the same data structure as the confidential micro-data. The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.7147919.v1). This capsule also makes clear the software required to execute `main.R`. Make sure to set `runtype = "CodeOcean-simulation"` by uncommenting line 6 and commenting line 7 in `main.R` and copy the contents of `2_MicrodataEstimation/` into the `code/` subdirectory of the Code Ocean capsule. Code Ocean run time is approximately 25 minutes.
 
 
 
@@ -84,7 +84,7 @@ Step 3 -- Permanent-Transitory Process Estimation
 
 ### Overview of this Step
 
-Using certain confidential statistical extracts produced by step 2, this step uses a polynomial optimization approach to estimate a permanent-transitory process in Matlab. The results from this step are only relevant to Online Appendix Table A3 of our manuscript, so this step may not be of primary interest to replicators. The replication code for this step is available in subdirectory `3_PTprocess/` of our replication package, and is executed by sourcing the `main.m` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3047157/tree).
+Using certain confidential statistical extracts produced by step 2, this step uses a polynomial optimization approach to estimate a permanent-transitory process in Matlab. The results from this step are only relevant to Online Appendix Table A3 of our manuscript, so this step may not be of primary interest to replicators. The replication code for this step is available in subdirectory `3_PTprocess/` of our replication package, and is executed by sourcing the `main.m` script. We provide a Code Ocean replication capsule for this step applied to simulated data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3047157.v1).
 
 ### Software Requirements
 
@@ -93,7 +93,7 @@ All estimation in this step is performed using Matlab (it was most recently test
 - **SeDuMi:** This can be downloaded from https://github.com/sqlp/sedumi/archive/master.tar.gz. Note that it must be unpacked and saved to the Matlab general path before use.
 - **gloptipoly3:** This can be downloaded from http://homepages.laas.fr/henrion/software/gloptipoly3/gloptipoly3.zip. Note that it must be unpacked and saved to the Matlab general path before use.
 
-See the `postInstall` script of our CodeOcean capsule (discussed below) for an automated approach to download these two add-ons, unpack them, and add them to the Matlab general path.
+See the `postInstall` script of our Code Ocean capsule (discussed below) for an automated approach to download these two add-ons, unpack them, and add them to the Matlab general path.
 
 
 ### Instructions to Replicators
@@ -108,7 +108,7 @@ In order to execute step 3, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on CodeOcean which demonstrates all of step 3 using simulated data that has the same data structure as the confidential input data. The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3047157/tree). For the 6 `.dat` files, it uses the results produced by the CodeOcean capsule described under step 2, which were based on simulated data. The `postInstall` file available in the CodeOcean capsule demonstrates how to automatically prepare the software. Run time is approximately 2 minutes.
+We have prepared a replication capsule on Code Ocean which demonstrates all of step 3 using simulated data that has the same data structure as the confidential input data. The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3047157.v1). For the 6 `.dat` files, it uses the results produced by the Code Ocean capsule described under step 2, which were based on simulated data. The `postInstall` file available in the Code Ocean capsule demonstrates how to automatically prepare the software. Run time is approximately 2 minutes.
 
 
 
@@ -118,7 +118,7 @@ Step 4 -- Analyses of Statistical Extracts
 
 ### Overview of this Step
 
-Given the statistical extracts and process estimates produced by steps 2 and 3, perform final analyses and produce all tables and figures. The replication code for this step is available in subdirectory `4_StatisticalAnalyses/` of our replication package, and is executed by sourcing the `main.R` script. We provide CodeOcean replication capsules for this step applied to both the real data and the simulated data.
+Given the statistical extracts and process estimates produced by steps 2 and 3, this step performs final analyses and produces all tables and figures in R. The replication code for this step is available in subdirectory `4_StatisticalAnalyses/code/` of our replication package, and is executed by sourcing the `main.R` script. We provide Code Ocean replication capsules for this step applied to both the real data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.4775581.v1) and to the simulated data at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3648033.v1).
 
 ### Software Requirements
 
@@ -151,9 +151,9 @@ In order to execute step 4, complete the following tasks in order:
 
 ### Replication Capsule
 
-We have prepared a replication capsule on CodeOcean which demonstrates all of step 4 using the statistical extracts from the *real IRS data*. The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/4775581/tree). The capsule reproduces all tables and figures in the paper and its online appendix. Run time is approximately 3 minutes.
+We have prepared a replication capsule on Code Ocean which demonstrates all of step 4 using the statistical extracts from the *real IRS data*. The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.4775581.v1). Make sure to comment line 7 and uncomment line 8 so that `runtype = "CodeOcean-real"`. The capsule reproduces all tables and figures in the paper and its online appendix. Run time is approximately 3 minutes.
 
-We have also prepared a replication capsule on CodeOcean which demonstrates all of step 4 using the statistical extracts from the *simulated data*.  The capsule is available at [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/3648033/tree). Run time is approximately 3 minutes.
+We have also prepared a replication capsule on Code Ocean which demonstrates all of step 4 using the statistical extracts from the *simulated data*.  The capsule is available at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.3648033.v1). Make sure to comment line 7 and uncomment line 6 so that `untype = "CodeOcean-simulation"`. Run time is approximately 3 minutes.
 
 
 List of Output and Associated Programs
@@ -196,11 +196,11 @@ All tables and figures in the main text and online appendix of the manuscript ar
 | Figure A7 | figure.A7ab() | model_results.R | figureA7a.pdf, figureA7b.pdf | model/LMS_shrinks_naics2_cz_broadmarket.csv | Step 2 |
 
 
-This output can be viewed in the `results/` subdirectory of our CodeOcean replication capsule here: [![CodeOcean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/4775581/tree).
+This output can be viewed in the `results/` subdirectory of our Code Ocean replication capsule at [![CodeOcean](open-in-code-ocean.svg)](https://doi.org/10.24433/CO.4775581.v1).
 
 
 
 License
 --------------
 
-The code and data sets are licensed under a MIT license. See [license](https://github.com/setzler/LMS/blob/main/LICENSE) for details.
+The code is licensed under a MIT license. See [license](https://github.com/setzler/LMS/blob/main/LICENSE) for details.
